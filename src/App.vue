@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <HeadBar/>
+    <headBar/>
+
     <img src="./assets/logo.png">
+        <diaLog ref='diaLog'/>
     <div>
       <p>
         If Element is successfully added to this project, you'll see an
@@ -16,12 +18,14 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import HeadBar from './components/HeadBar'
+import HeadBar from './components/HeadBar.vue'
+import DiaLog from './components/DiaLog.vue'
 export default {
   name: 'app',
   components: {
     HelloWorld,
-    HeadBar,
+    headBar:HeadBar,
+    diaLog:DiaLog
   }
 }
 </script>
