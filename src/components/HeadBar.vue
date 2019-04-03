@@ -18,11 +18,13 @@
     </el-col>
   </el-row>
 </template>
+
 <script>
+import Login from './Login'
 export default {
   methods:{
     showLogin(){
-      this.$parent.$refs.diaLog.showDiaLog();
+      this.$parent.$refs.diaLog.showDiaLog(Login);
     }
   }
 }

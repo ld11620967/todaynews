@@ -1,9 +1,8 @@
 <template>
   <div id="app">
     <headBar/>
-
     <img src="./assets/logo.png">
-        <diaLog ref='diaLog'/>
+    <diaLog ref='diaLog'/>
     <div>
       <p>
         If Element is successfully added to this project, you'll see an
