@@ -1,17 +1,8 @@
 <template>
   <div id="app">
     <headBar/>
-    <img src="./assets/logo.png">
     <diaLog ref='diaLog'/>
-    <div>
-      <p>
-        If Element is successfully added to this project, you'll see an
-        <code v-text="'<el-button>'"></code>
-        below
-      </p>
-      <el-button>el-button</el-button>
-    </div>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="test"/>
   </div>
 </template>
 
