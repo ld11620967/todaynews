@@ -2,20 +2,20 @@
   <div id="app">
     <headBar/>
     <diaLog ref='diaLog'/>
-    <HelloWorld msg="test"/>
+    <carousel/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import HeadBar from './components/HeadBar.vue'
 import DiaLog from './components/DiaLog.vue'
+import Carousel from './components/Carousel.vue'
 export default {
   name: 'app',
   components: {
-    HelloWorld,
     headBar:HeadBar,
-    diaLog:DiaLog
+    diaLog:DiaLog,
+    carousel:Carousel
   }
 }
 </script>
