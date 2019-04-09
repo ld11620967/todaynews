@@ -5,6 +5,7 @@
       <headBar/>
       <diaLog ref="diaLog"/>
       <carousel/>
+      <list/>
     </div>
     <div class="right"></div>
   </div>
@@ -14,12 +15,14 @@
 import HeadBar from "./components/HeadBar.vue";
 import DiaLog from "./components/DiaLog.vue";
 import Carousel from "./components/Carousel.vue";
+import List from "./components/List.vue";
 export default {
   name: "app",
   components: {
     headBar: HeadBar,
     diaLog: DiaLog,
-    carousel: Carousel
+    carousel: Carousel,
+    list:List
   }
 };
 </script>
