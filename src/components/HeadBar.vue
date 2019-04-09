@@ -1,9 +1,6 @@
 <template>
   <el-row>
-    <el-col :span="2">
-      <div style="background:#f9fafc;height:3em;line-height:3em">&nbsp;</div>
-    </el-col>
-    <el-col :span="2">
+    <el-col :span="3">
       <div>
         <img src="https://avatars3.githubusercontent.com/u/15765766?s=460&v=4" height="50px">
         <strong style="padding:10px">逆鳞</strong>
@@ -24,7 +21,7 @@
     <el-col :span="2">
       <div style="background:#f9fafc;height:3em;line-height:3em">图片分享</div>
     </el-col>
-    <el-col :span="4">
+    <el-col :span="7">
       <div style="background:#f9fafc;height:3em;line-height:3em">&nbsp;</div>
     </el-col>
     <el-col :span="2">
@@ -34,9 +31,6 @@
     </el-col>
     <el-col :span="2">
       <div style="background:#f9fafc;height:3em;line-height:3em" @click="showLogin">登录/注册</div>
-    </el-col>
-    <el-col :span="2">
-      <div style="background:#f9fafc;height:3em;line-height:3em">&nbsp;</div>
     </el-col>
   </el-row>
 </template>
