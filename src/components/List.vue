@@ -1,10 +1,10 @@
 <template>
   <div>
     <ul class="list">
-      <li v-for="item in list">
+      <li v-for="item in list" :key="item">
         <el-col :span="12">
-          <div>{{item.title}}</div>
-          {{item.published_at}}
+          <div>{{item.desc}}</div>
+          {{item.publishedAt}}
         </el-col>
         <el-col :span="6">
           <img
@@ -33,11 +33,11 @@ export default {
   },
   methods: {
     getData() {
-      var api = "http://gank.io/api/xiandu/data/id/appinn/count/20/page/1";
+      var api = "http://gank.io/api/today";
       Axios.get(api)
         .then(response => {
           //console.log(response.data.result);
-          this.list = response.data.results;
+          this.list = response.data.results.前端;
         })
         .catch(error => {
           console.log(error);

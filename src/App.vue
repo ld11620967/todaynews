@@ -4,6 +4,12 @@
     <div id="app">
       <headBar/>
       <diaLog ref="diaLog"/>
+<el-row>
+  <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+  <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+  <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+  <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+</el-row>
       <carousel/>
       <list/>
     </div>
@@ -22,7 +28,7 @@ export default {
     headBar: HeadBar,
     diaLog: DiaLog,
     carousel: Carousel,
-    list:List
+    list: List
   }
 };
 </script>

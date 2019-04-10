@@ -3,9 +3,20 @@
     <el-col :span="12">
       <div class="block">
         <!-- <span class="demonstration">Click 指示器触发</span> -->
-        <el-carousel trigger="click" height="340px">
+        <el-carousel height="340px">
           <el-carousel-item v-for="item in 4" :key="item">
-            <h3>{{ item }}</h3>
+            <div>
+              <a href="#" onclick="window.open('http://www.apkbus.com/thread-605543-1-1.html')">
+                <img
+                  src="http://www.apkbus.com/data/attachment/forum/201902/15/100118xoikij8db506u88m.jpg"
+                  height="340px"
+                  width="600px"
+                >
+                <div
+                  style="position:absolute; z-index:2; left:30px; top:280px; color:white; font-weight:bold;font-size:18px"
+                >添加文字...添加文字...添加文字...</div>
+              </a>
+            </div>
           </el-carousel-item>
         </el-carousel>
       </div>
@@ -43,11 +54,11 @@
   margin: 0;
 }
 
-.el-carousel__item:nth-child(2n) {
+/* .el-carousel__item:nth-child(2n) {
   background-color: #99a9bf;
 }
 
 .el-carousel__item:nth-child(2n + 1) {
   background-color: #d3dce6;
-}
+} */
 </style>
