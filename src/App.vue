@@ -2,33 +2,34 @@
   <div class="layout auto-width">
     <div class="left"></div>
     <div id="app">
-      <headBar/>
-      <diaLog ref="diaLog"/>
-<el-row>
-  <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-  <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
-  <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-  <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
-</el-row>
-      <carousel/>
-      <list/>
+      <headbar/>
+      <dialog1 ref="dialog"/>
+      <el-row>
+        <el-col :span="18">
+            <left/>
+        </el-col>
+        <el-col :span="6">
+          <right/>
+        </el-col>
+      </el-row>
+
     </div>
     <div class="right"></div>
   </div>
 </template>
 
 <script>
-import HeadBar from "./components/HeadBar.vue";
-import DiaLog from "./components/DiaLog.vue";
-import Carousel from "./components/Carousel.vue";
-import List from "./components/List.vue";
+import headbar from "./components/HeadBar.vue";
+import dialog1 from "./components/DiaLog.vue";
+import left from "./components/Left.vue";
+import right from "./components/Right.vue";
 export default {
   name: "app",
   components: {
-    headBar: HeadBar,
-    diaLog: DiaLog,
-    carousel: Carousel,
-    list: List
+    headbar,
+    dialog1,
+    left,
+    right,
   }
 };
 </script>

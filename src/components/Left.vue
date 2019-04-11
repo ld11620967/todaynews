@@ -1,6 +1,6 @@
 <template>
   <el-row>
-    <el-col :span="12">
+    <el-col :span="16">
       <div class="block">
         <!-- <span class="demonstration">Click 指示器触发</span> -->
         <el-carousel height="340px">
@@ -21,7 +21,7 @@
         </el-carousel>
       </div>
     </el-col>
-    <el-col :span="6">
+    <el-col :span="8">
       <div>
         <a href="#" onclick="window.open('http://www.apkbus.com/thread-605543-1-1.html')">
           <img
@@ -39,13 +39,62 @@
         </a>
       </div>
     </el-col>
-    <el-col :span="6">
-      <div style="background:#f9fafc;height:3em;line-height:3em">热门文章</div>
-    </el-col>
+    <div>
+      <ul class="list">
+        <li v-for="item in list" :key="item">
+          <el-col :span="16">
+            <div>{{item.desc}}</div>
+            {{item.publishedAt}}
+          </el-col>
+          <el-col :span="8">
+            <img
+              src="http://www.apkbus.com/data/attachment/forum/201805/21/121202u14siar8gzw5ekw4.jpeg"
+              height="160px"
+            >
+          </el-col>
+        </li>
+      </ul>
+    </div>
   </el-row>
 </template>
 
-<style>
+<script>
+//第三方插件的使用
+import Axios from "axios";
+export default {
+  data() {
+    return {
+      list: []
+    };
+  },
+  methods: {
+    getData() {
+      var api = "http://gank.io/api/today";
+      Axios.get(api)
+        .then(response => {
+          //console.log(response.data.result);
+          this.list = response.data.results.前端;
+        })
+        .catch(error => {
+          console.log(error);
+        });
+    }
+  },
+  mounted() {
+    this.getData();
+  }
+};
+</script>
+
+<style lang="scss" scoped>
+.list {
+  li {
+    display: block;
+    text-align: left;
+    padding: 10px 0;
+  }
+}
+
 .el-carousel__item h3 {
   color: #475669;
   font-size: 14px;
@@ -53,12 +102,4 @@
   line-height: 150px;
   margin: 0;
 }
-
-/* .el-carousel__item:nth-child(2n) {
-  background-color: #99a9bf;
-}
-
-.el-carousel__item:nth-child(2n + 1) {
-  background-color: #d3dce6;
-} */
 </style>

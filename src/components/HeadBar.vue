@@ -40,7 +40,7 @@ import Login from "./Login";
 export default {
   methods: {
     showLogin() {
-      this.$parent.$refs.diaLog.showDiaLog(Login);
+      this.$parent.$refs.dialog.showDiaLog(Login);
     }
   }
 };
