@@ -1,11 +1,27 @@
 <template>
-  <el-dialog title="提示" :visible.sync="dialogVisible" width="30%">
+  <el-dialog title="Nilin的小窝" :visible.sync="dialogVisible" width="400px">
     <component :is="currentView"></component>
-    <span>忘记密码</span>
-    <span slot="footer" class="dialog-footer">
-      <el-button type="primary" @click="dialogVisible = false">登 录</el-button>
-      <el-button @click="dialogVisible = false">注 册</el-button>
-    </span>
+    <!-- `checked` 为 true 或 false -->
+    <el-checkbox v-model="checked">记住密码</el-checkbox>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <el-button type="text">忘记密码？</el-button>
+    </br>
+    </br>
+    </br>
+    <el-button type="primary" round>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      登录
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </el-button>
+    </br>
+    <el-button type="text">新用户注册</el-button>
   </el-dialog>
 </template>
 

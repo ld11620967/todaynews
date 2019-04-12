@@ -1,19 +1,18 @@
 <template>
-  <form>
-    <table align="center">
-      <tr>
-        <td>用户名:</td>
-        <td>
-          <input type="text" name="email">
-        </td>
-      </tr>
-      <tr>
-        <td>密码:</td>
-        <td>
-          <input type="password" name="pwd">
-        </td>
-      </tr>
-    </table>
-  </form>
+  <div>
+    <el-input v-model="input" placeholder="请输入用户名"></el-input>
+    </br>
+    </br>
+    <el-input v-model="input1" placeholder="请输入密码"></el-input>
+  </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      input: ""
+    };
+  }
+};
+</script>

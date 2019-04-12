@@ -3,7 +3,7 @@
     <el-col :span="3">
       <div>
         <img src="https://avatars3.githubusercontent.com/u/15765766?s=460&v=4" height="50px">
-        <strong style="padding:10px">逆鳞</strong>
+        <strong style="padding:10px">Nilin</strong>
       </div>
     </el-col>
     <el-col :span="2">
@@ -26,7 +26,7 @@
     </el-col>
     <el-col :span="2">
       <div style="background:#f9fafc;height:3em;line-height:3em">
-        <i class="el-icon-search"></i>搜索
+        <i class="el-icon-search"></i>&nbsp;搜索
       </div>
     </el-col>
     <el-col :span="2">
