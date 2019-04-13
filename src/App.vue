@@ -3,7 +3,7 @@
     <div class="left"></div>
     <div id="app">
       <headbar/>
-      <dialog ref="dialog"/>
+      <dialog1 ref="dialog"/>
       <el-row>
         <el-col :span="18">
             <left/>
@@ -12,7 +12,6 @@
           <right/>
         </el-col>
       </el-row>
-
     </div>
     <div class="right"></div>
   </div>
@@ -20,14 +19,14 @@
 
 <script>
 import headbar from "./components/HeadBar.vue";
-import dialog from "./components/Dialog.vue";
+import dialog1 from "./components/Dialog.vue";
 import left from "./components/Left.vue";
 import right from "./components/Right.vue";
 export default {
   name: "app",
   components: {
     headbar,
-    dialog,
+    dialog1,
     left,
     right,
   }
@@ -47,7 +46,7 @@ export default {
 .layout {
   display: flex;
   height: 200px;
-  width: 100%;
+  width: 1900px;
 }
 .layout .left {
   flex: 1;
