@@ -31,7 +31,7 @@ export default {
     return {
       dialogVisible: false,
       currentView: null
-    };
+    }
   },
   methods: {
     showDiaLog(vnode) {
